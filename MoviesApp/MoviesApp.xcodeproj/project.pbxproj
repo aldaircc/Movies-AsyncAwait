@@ -15,6 +15,8 @@
 		054B1CFF2A8D9C2F002CCC2B /* MoviesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1CFE2A8D9C2F002CCC2B /* MoviesAppUITests.swift */; };
 		054B1D012A8D9C2F002CCC2B /* MoviesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1D002A8D9C2F002CCC2B /* MoviesAppUITestsLaunchTests.swift */; };
 		054B1D112A8D9E2D002CCC2B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1D102A8D9E2D002CCC2B /* LoginView.swift */; };
+		054B1D132A8DCFC3002CCC2B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1D122A8DCFC3002CCC2B /* Request.swift */; };
+		054B1D152A8DD137002CCC2B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1D142A8DD137002CCC2B /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		054B1CFE2A8D9C2F002CCC2B /* MoviesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppUITests.swift; sourceTree = "<group>"; };
 		054B1D002A8D9C2F002CCC2B /* MoviesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		054B1D102A8D9E2D002CCC2B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		054B1D122A8DCFC3002CCC2B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		054B1D142A8DD137002CCC2B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				054B1CE52A8D9C2D002CCC2B /* ContentView.swift */,
 				054B1CE72A8D9C2F002CCC2B /* Assets.xcassets */,
 				054B1CE92A8D9C2F002CCC2B /* Preview Content */,
+				054B1D122A8DCFC3002CCC2B /* Request.swift */,
+				054B1D142A8DD137002CCC2B /* Network.swift */,
 			);
 			path = MoviesApp;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B1D152A8DD137002CCC2B /* Network.swift in Sources */,
 				054B1D112A8D9E2D002CCC2B /* LoginView.swift in Sources */,
+				054B1D132A8DCFC3002CCC2B /* Request.swift in Sources */,
 				054B1CE62A8D9C2D002CCC2B /* ContentView.swift in Sources */,
 				054B1CE42A8D9C2D002CCC2B /* MoviesAppApp.swift in Sources */,
 			);
