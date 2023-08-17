@@ -94,6 +94,9 @@
 		054B1CE22A8D9C2D002CCC2B /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				054B1D0D2A8D9C37002CCC2B /* Model */,
+				054B1D0F2A8D9C45002CCC2B /* View */,
+				054B1D0E2A8D9C3C002CCC2B /* ViewModel */,
 				054B1CE32A8D9C2D002CCC2B /* MoviesAppApp.swift */,
 				054B1CE52A8D9C2D002CCC2B /* ContentView.swift */,
 				054B1CE72A8D9C2F002CCC2B /* Assets.xcassets */,
@@ -125,6 +128,27 @@
 				054B1D002A8D9C2F002CCC2B /* MoviesAppUITestsLaunchTests.swift */,
 			);
 			path = MoviesAppUITests;
+			sourceTree = "<group>";
+		};
+		054B1D0D2A8D9C37002CCC2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		054B1D0E2A8D9C3C002CCC2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		054B1D0F2A8D9C45002CCC2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
