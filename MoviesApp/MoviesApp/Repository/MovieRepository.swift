@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+final class MovieRepository {
+    let network = Network()
+    
+    func getGenre(_ isForMovie: Bool) async throws -> GenresDTO {
+        let request = GenreModel(isForMovie)
+        return try await network.callUrl(request, objectType: GenresDTO.self)
+    }
+    
+    
+}
