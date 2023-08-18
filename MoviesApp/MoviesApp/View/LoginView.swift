@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var authVM: AuthenticateVM
     @State var username: String = ""
     @State var password: String = ""
     
@@ -17,9 +18,11 @@ struct LoginView: View {
             TextField("Username", text: $username)
             SecureField("Password", text: $password)
             Spacer()
-                .frame(width: .infinity, height: 20, alignment: .center)
+                .frame(width: 200, height: 20, alignment: .center)
             Button("Login") {
-                print("Login")
+                Task {
+                    await authVM.login(username, password: password)
+                }
             }
         }
         .padding(.horizontal, 10)
