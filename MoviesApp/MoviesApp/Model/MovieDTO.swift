@@ -34,3 +34,10 @@ struct MovieDTO: Codable {
         case voteCount = "vote_count"
     }
 }
+
+struct MoviesDTO: Codable {
+    let page: Int
+    let result: [MovieDTO]
+    let total_pages: Int
+    let total_results: Int
+}
