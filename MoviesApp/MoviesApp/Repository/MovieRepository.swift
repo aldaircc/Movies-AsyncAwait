@@ -15,5 +15,19 @@ final class MovieRepository {
         return try await network.callUrl(request, objectType: GenresDTO.self)
     }
     
+    func getNowPlaying() {
+        
+    }
     
+    func getPopular() {
+        
+    }
+    
+    func getTopRated() {
+        
+    }
+    
+    func getUpcoming() {
+        
+    }
 }
