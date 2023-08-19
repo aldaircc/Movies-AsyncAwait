@@ -37,7 +37,7 @@ struct MovieDTO: Codable {
 
 struct MoviesDTO: Codable {
     let page: Int
-    let result: [MovieDTO]
+    let results: [MovieDTO]
     let total_pages: Int
     let total_results: Int
 }

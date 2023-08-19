@@ -15,6 +15,7 @@ struct GenreModel: Request {
     init(_ model: Bool) {
         endpoint = (model) ? "genre/movie/list" : "genre/tv/list"
         params = [:]
+        updateRequest()
     }
     
     mutating func updateRequest() {

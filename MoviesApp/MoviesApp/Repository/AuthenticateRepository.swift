@@ -10,9 +10,10 @@ import Foundation
 final class AuthenticateRepository {
     let network = Network()
     
-    func login(_ user: User) async throws {
+    func login(_ user: User) async throws -> Bool {
         let request = AuthenticateModel(user)
-        try await network.callUrl(request, objectType: SessionResponse.self)
+        let result = try await network.callUrl(request, objectType: SessionResponse.self)
+        return result.success
     }
     
     func getToken() async throws -> String {

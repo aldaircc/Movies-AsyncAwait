@@ -10,15 +10,17 @@ import Foundation
 final class AuthenticateVM: ObservableObject {
     private(set) var user: User = User(username: "", password: "", requestToken: "")
     private let repository = AuthenticateRepository()
-    var isError = false
-    var isLoading = false
-    
+    private(set) var isError = false
+    private(set) var isLoading = false
+    @Published var isLogged = false
+
+    @MainActor
     func login(_ username: String, password: String) async {
         do {
             isLoading = true
             let token = try await repository.getToken()
             user = User(username: "aldair.loq.369", password: "C1ps@420$$", requestToken: token)
-            try await repository.login(user)
+            isLogged = try await repository.login(user)
             isLoading = false
         } catch {
             debugPrint(error.localizedDescription)

@@ -26,7 +26,6 @@ struct Network: NetworkRequest {
         
         let params = (request.params.isEmpty) ? nil : try? JSONSerialization.data(withJSONObject: request.params, options: .prettyPrinted)
         
-        
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.httpMethod.rawValue
         urlRequest.allHTTPHeaderFields = request.httpHeaders
