@@ -19,7 +19,7 @@ final class AuthenticateVM: ObservableObject {
         do {
             isLoading = true
             let token = try await repository.getToken()
-            user = User(username: "aldair.loq.369", password: "C1ps@420$$", requestToken: token)
+            user = User(username: username, password: password, requestToken: token)
             isLogged = try await repository.login(user)
             isLoading = false
         } catch {
